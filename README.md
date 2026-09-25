@@ -1,13 +1,44 @@
-# 🛡️ AI Security Analyzer - Phishing Detector
+<div align="center">
 
-An automated cybersecurity tool powered by AI to detect Phishing Emails, Social Engineering attacks, and malicious links.
+# 🛡️ AI Phishing & Threat Analyzer
 
-## 🚀 Features
-- **Risk Assessment:** Calculates risk level and percentage.
-- **Threat Indicator Extraction:** Detects suspicious URLs, IPs, and urgent phrases.
-- **Attack Classification:** Classifies threats (Credential Harvesting, Malware, etc.).
-- **Actionable Mitigation:** Provides actionable security recommendations.
+### *Next-Gen Defensive Cybersecurity Tool Powered by AI*
 
-## 🛠️ Technologies Used
-- Python 3
-- REST API integration
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Google%20Gemini-API-8E44AD?style=for-the-badge&logo=google&logoColor=white)
+![Security](https://img.shields.io/badge/Cybersecurity-Defensive-00FF66?style=for-the-badge&logo=shield&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+<p align="center">
+  <b>An automated security analysis agent designed to detect email phishing, social engineering attacks, and malicious links in real-time.</b>
+</p>
+
+---
+
+</div>
+
+## 📌 Overview
+
+The **AI Phishing & Threat Analyzer** leverages generative AI to analyze suspicious communications. Built specifically for Security Operations Center (SOC) teams and enterprise defense, it parses email headers, links, and body context to generate instant threat assessment reports.
+
+---
+
+## 🚀 Key Features
+
+| Feature | Description | Impact |
+| :--- | :--- | :--- |
+| 🎯 **Risk Scoring** | Assigns immediate threat levels (Low, Medium, Critical) with % confidence | Fast Triage |
+| 🔍 **Indicator Extraction** | Identifies deceptive URLs, spoofed domains, and urgent phrasing | SOC Efficiency |
+| 🛡️ **Mitigation Steps** | Generates actionable remediation protocols for incident responders | Instant Defense |
+| ⚡ **REST API Integration** | Ultra-fast execution with zero heavy local dependencies | Highly Scalable |
+
+---
+
+## 🏗️ Repository Structure
+
+```text
+📁 AI-Phishing-Detector
+ ├── 📜 app.py               # Interactive Streamlit Web Interface
+ ├── 📜 phishing_analyzer.py # Core Python script & REST API client
+ ├── 📜 requirements.txt     # System Dependencies
+ └── 📜 README.md            # Portfolio Documentation
