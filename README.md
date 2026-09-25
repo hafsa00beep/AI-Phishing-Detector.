@@ -37,8 +37,9 @@ The **AI Phishing & Threat Analyzer** leverages generative AI to analyze suspici
 ## 🏗️ Repository Structure
 
 ```text
+git clone [https://github.com/hafsa00beep/AI-Phishing-Detector.git](https://github.com/hafsa00beep/AI-Phishing-Detector.git)
+cd AI-Phishing-Detector
+python phishing_analyzer.py
 📁 AI-Phishing-Detector
- ├── 📜 app.py               # Interactive Streamlit Web Interface
  ├── 📜 phishing_analyzer.py # Core Python script & REST API client
- ├── 📜 requirements.txt     # System Dependencies
  └── 📜 README.md            # Portfolio Documentation
