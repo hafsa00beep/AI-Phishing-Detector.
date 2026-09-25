@@ -1,53 +1,44 @@
-import requests
+<div align="center">
 
-# 1. مفتاح الـ API
-API_KEY = "AQ.Ab8RN6JiSQdjn-jJHhoCJ9zQt0Ao4kyOoMv5x9LxCwniFv4dJw"
+# 🛡️ AI Phishing & Threat Analyzer
 
-# رابط الـ API المباشر
-URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={API_KEY}"
+### *Next-Gen Defensive Cybersecurity Tool Powered by AI*
 
-def analyze_phishing_email(email_text):
-    prompt_text = f"""
-    أنت خبير أمن سيبراني متخصص في كشف هجمات الصيد الاحتيالي (Phishing).
-    قم بتحليل النص التالي بأسلوب تقني واحترافي:
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Google%20Gemini-API-8E44AD?style=for-the-badge&logo=google&logoColor=white)
+![Security](https://img.shields.io/badge/Cybersecurity-Defensive-00FF66?style=for-the-badge&logo=shield&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-    --- النص المراد فحصه ---
-    {email_text}
-    ------------------------
+<p align="center">
+  <b>An automated security analysis agent designed to detect email phishing, social engineering attacks, and malicious links in real-time.</b>
+</p>
 
-    المطلوب في التقرير:
-    1. تقييم مستوى الخطر (منخفض - متوسط - مرتفع جداً) مع نسبة مئوية.
-    2. المؤشرات المشبوهة (Suspicious Indicators).
-    3. نوع الهجوم المحتمل.
-    4. التوصية الأمنية المباشرة.
-    """
+---
 
-    payload = {
-        "contents": [
-            {
-                "parts": [{"text": prompt_text}]
-            }
-        ]
-    }
+</div>
 
-    try:
-        response = requests.post(URL, json=payload)
-        result = response.json()
-        
-        # استخراج النتيجة
-        report = result['candidates'][0]['content']['parts'][0]['text']
-        print("\n================ 🛡️ تقرير الفحص السيبراني للشركات 🛡️ ================\n")
-        print(report)
-    except Exception as e:
-        print("حدث خطأ أثناء الاتصال بالذكاء الاصطناعي:", e)
+## 📌 Overview
 
-# --- تجربة فحص رسالة ---
-if __name__ == "__main__":
-    sample_email = """
-    Dear Employee, 
-    Your Office365 password will expire in 2 hours. 
-    Please click on http://192.168.1.45/auth/login to keep your current password.
-    Failure to do so will result in immediate suspension of your corporate account.
-    IT Support Team.
-    """
-    analyze_phishing_email(sample_email)
+The **AI Phishing & Threat Analyzer** leverages generative AI to analyze suspicious communications. Built specifically for Security Operations Center (SOC) teams and enterprise defense, it parses email headers, links, and body context to generate instant threat assessment reports.
+
+---
+
+## 🚀 Key Features
+
+| Feature | Description | Impact |
+| :--- | :--- | :--- |
+| 🎯 **Risk Scoring** | Assigns immediate threat levels (Low, Medium, Critical) with % confidence | Fast Triage |
+| 🔍 **Indicator Extraction** | Identifies deceptive URLs, spoofed domains, and urgent phrasing | SOC Efficiency |
+| 🛡️ **Mitigation Steps** | Generates actionable remediation protocols for incident responders | Instant Defense |
+| ⚡ **REST API Integration** | Ultra-fast execution with zero heavy local dependencies | Highly Scalable |
+
+---
+
+## 🏗️ Repository Structure
+
+```text
+📁 AI-Phishing-Detector
+ ├── 📜 app.py               # Interactive Streamlit Web Interface
+ ├── 📜 phishing_analyzer.py # Core Python script & REST API client
+ ├── 📜 requirements.txt     # System Dependencies
+ └── 📜 README.md            # Portfolio Documentation
